@@ -1,0 +1,137 @@
+#include<stdio.h>
+
+int main(){
+int name;
+int phone_no;
+int burger;
+int lays;
+int sandwich;
+int momos;
+
+int coke;
+int sprite;
+int dew;
+int mojito;
+
+int apples;
+int bananas;
+int mangoes;
+
+int bat;
+int football;
+int ball;
+
+printf("                 WELCOME TO AM-PM STORE\n\n");
+printf("-----------------------\n");
+printf("BILLING SYSTEM\n");
+printf("-----------------------\n\n");
+printf("Customer name : ");
+scanf("%s",&name);
+printf("Customer phone number : ");
+scanf("%d",&phone_no);
+printf("-----------------------\n\n");
+
+printf("FOOD ITEMS\n");
+printf("Burger (Rs 40) : ");
+scanf("%d",&burger);
+printf("Lays (Rs 30) : ");
+scanf("%d",&lays);
+printf("Sandwich (Rs 60) : ");
+scanf("%d",&sandwich);
+printf("Ready to eat momos (Rs 80) : ");
+scanf("%d",&momos);
+printf("-----------------------\n");
+
+printf("DRINKS\n");
+printf("Coca Cola (Rs 50) : ");
+scanf("%d",&coke);
+printf("Sprite (Rs 50) : ");
+scanf("%d",&sprite);
+printf("Dew (Rs 50) : ");
+scanf("%d",&dew);
+printf("Mojito (Rs 70) : ");
+scanf("%d",&mojito);
+printf("-----------------------\n");
+
+printf("FRUITS\n");
+printf("Apples (Rs 80/Kg) : ");
+scanf("%d",&apples);
+printf("Bananas (Rs 70/Dz) : ");
+scanf("%d",&bananas);
+printf("Mangoes (Rs 90/Kg) : ");
+scanf("%d",&mangoes);
+printf("-----------------------\n");
+
+printf("Sports\n");
+printf("Cricket bat (Rs 200) : ");
+scanf("%d",&bat);
+printf("Football (Rs 350) : ");
+scanf("%d",&football);
+printf("Cricket ball (Rs 60) : ");
+scanf("%d",&ball);
+printf("-----------------------\n\n");
+
+int total_Burger;
+int total_Lays;
+int total_sandwich;
+int total_momos;
+
+total_Burger = 40*burger;
+total_Lays = 30*lays;
+total_sandwich = 60*sandwich;
+total_momos = 80*momos;
+
+int total_coke = 50*coke;
+int total_sprite = 50*sprite;
+int total_dew = 50*dew;
+int total_mojito = 70*mojito;
+
+int total_apples = 80*apples;
+int total_bananas = 70*bananas;
+int total_mangoes = 90*mangoes;
+
+int total_bat = 200*bat;
+int total_football = 350*football;
+int total_ball = 60*ball;
+
+printf("Things                                       Quantity                                 Total\n");
+printf("Burger                                          %d                                      %d\n",burger,total_Burger);
+printf("Lays                                            %d                                      %d\n",lays,total_Lays);
+printf("Sandwich                                        %d                                      %d\n",sandwich,total_sandwich);
+printf("Ready to eat momos                              %d                                      %d\n",momos,total_momos);
+printf("Cola Cola                                       %d                                      %d\n",coke,total_coke);
+printf("Sprite                                          %d                                      %d\n",sprite,total_sprite);
+printf("Dew                                             %d                                      %d\n",dew,total_dew);
+printf("Mojito                                          %d                                      %d\n",mojito,total_mojito);
+printf("Apples                                          %d                                      %d\n",apples,total_apples);
+printf("Bananas                                         %d                                      %d\n",bananas,total_bananas);
+printf("Mangoes                                         %d                                      %d\n",mangoes,total_mangoes);
+printf("Cricket Bat                                     %d                                      %d\n",bat,total_bat);
+printf("Football                                        %d                                      %d\n",football,total_football);
+printf("Cricket Ball                                    %d                                      %d\n",ball,total_ball);
+
+int total_food = total_Burger + total_Lays + total_sandwich + total_momos;
+int total_drinks = total_coke+total_sprite+total_dew+total_mojito;
+int total_fruits = total_apples+total_bananas+total_mangoes;
+int total_sports = total_bat+total_football+total_ball;
+
+printf("TOTAL OF FOOD : %d\n",total_food);
+printf("TOTAL OF DRINKS : %d\n",total_drinks);
+printf("TOTAL OF FRUITS : %d\n",total_fruits);
+printf("TOTAL OF SPORTS : %d\n",total_sports);
+
+
+int total_bill = total_food+total_drinks+total_fruits+total_sports;
+
+printf("-----------------------\n\n");
+
+printf("TOTAL BILL : %d\n",total_bill);
+
+
+printf("-----------------------\n\n");
+
+printf("                      THANKS FOR VISITING AM-PM STORE\n");
+printf("                      HAVE A GREAT DAY\n");
+
+return 0;
+}
